@@ -1,24 +1,18 @@
 {
-  "name": "chatroom",
+  "name": "shimmer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": ""
+    "start": "node app.js && open ./public/index.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Billshimmer/ChatRoom.git"
-  },
-  "author": "shimmer.bjh",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Billshimmer/ChatRoom/issues"
-  },
-  "homepage": "https://github.com/Billshimmer/ChatRoom#readme",
   "dependencies": {
-    "mime": "^1.3.4",
-    "socket.io": "^1.7.2"
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {
+    "socket.io": "^1.7.3"
   }
 }
