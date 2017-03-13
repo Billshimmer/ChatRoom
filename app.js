@@ -2,6 +2,10 @@ var express = require('express');
 var app = require("express")();
 var http = require('http').createServer(app);
 var io = require("socket.io")(http);
+var opn = require("opn");
+
+const port = 2022;
+const uri = "http://localhost:" + port;
 
 app.use(express.static(__dirname + '/public'));
 
@@ -26,6 +30,7 @@ io.on("connection", function(socket){
 
 
 
-http.listen(2022, function () {
+http.listen(port, function () {
   console.log("welcome to our chat room!");
+  opn(uri)
 })
